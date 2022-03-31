@@ -1,0 +1,13 @@
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class HelloRestController {
+
+
+
+	@GetMapping("/hello")
+	public Greeting greeting() {
+		return "Hello World";
+	}
+}
